@@ -14,8 +14,6 @@ elgg_register_event_handler('init', 'system', 'subtype_change_tool_init');
  */
 function subtype_change_tool_init() {
 
-	elgg_register_library('db_explorer', dirname(__FILE__) . '/lib/db_explorer.php');
-
 	// Register actions
 	$actions_path = dirname(__FILE__) . "/actions/admin/";
 	elgg_register_action('admin/change_subtype', $actions_path . 'change_subtype.php', 'admin');
